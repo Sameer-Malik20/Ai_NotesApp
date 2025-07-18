@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "init": "^0.1.2",
+    "mongoose": "^8.16.3",
+    "nodemon": "^3.1.10"
+  },
+  "name": "backend",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run ai\"",
+    "server": "node app.js",
+    "ai": "cd ai-server && python app.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
